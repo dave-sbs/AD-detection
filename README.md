@@ -72,7 +72,7 @@ Future work will extend the model to multi-class classification and incorporate 
 
 ## Links to Code Blocks for Figures
 
-1. **Figure 1 - MRI Scan Samples**
+1. **Figure 1 - MRI Scan Samples** (https://github.com/dave-sbs/AD-detection/blob/main/oasis_data_classification_model.ipynb#display-example-mri-scans-from-each-class)
 2. **Figure 2 - CNN Confusion Matrix**
 3. **Figure 3 - Transfer Learning Confusion Matrix**
 ---
