@@ -109,7 +109,7 @@ Future work will extend the model to multi-class classification and incorporate 
 
 The figures mentioned below are located in the 'blog_figures' folder.
 
-1. [Figure 1 - MRI Scan Samples](https://github.com/dave-sbs/AD-detection/blob/main/oasis_data_classification_model.ipynb#display-example-mri-scans-from-each-class)
+1. [Figure 1 - MRI Scan Samples](https://github.com/dave-sbs/AD-detection/blob/main/oasis_data_classification_model.ipynb#L48)
 2. [Figure 2 - CNN Confusion Matrix](https://github.com/dave-sbs/AD-detection/blob/main/oasis_data_classification_model.ipynb#create-confusion-matrices)
 3. [Figure 3 - Transfer Learning Confusion Matrix](https://github.com/dave-sbs/AD-detection/blob/main/oasis_data_classification_model.ipynb#create-confusion-matrices)
 ---
