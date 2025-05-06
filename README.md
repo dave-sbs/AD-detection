@@ -8,7 +8,7 @@ This project leverages Convolutional Neural Networks (CNNs) to detect signs of d
 2. [Dataset](#dataset)
 3. [Data Preprocessing](#data-preprocessing)
 4. [Binary Classification](#binary-classification)
-5. [Our Models](#-our-models)
+5. [Our Models](#our-models)
 6. [Discussion](#discussion)
 7. [Reproduce the Models and Figure](#reproduce-the-models-and-figures)
 8. [Limitations](#limitations)
