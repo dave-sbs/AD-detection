@@ -42,7 +42,7 @@ The classification was framed as a binary task: detecting the presence of dement
 
 ### 1. Logistic Regression
 
-As a baseline, logistic regression achieved 67.4% accuracy.
+As a baseline, logistic regression achieved 69% accuracy.
 
 ### 2. Convolutional Neural Network (CNN)
 
