@@ -13,7 +13,6 @@ This project leverages Convolutional Neural Networks (CNNs) to detect signs of d
 7. [Reproduce the Models and Figure](#reproduce-the-models-and-figures)
 8. [Limitations](#limitations)
 9. [Conclusion](#conclusion)
-10. [Citations](#citations)
 
 ---
 
@@ -87,6 +86,8 @@ OASIS Data/
 └── Very mild Dementia/
 ```
 
+### 3. Install Dependencies and Run the Code
+
 Finally, install the required dependencies and run the "oasis_data_classification_model.ipynb" jupyter notebook file cells in order.
 
 
@@ -105,6 +106,8 @@ Future work will extend the model to multi-class classification and incorporate 
 ---
 
 ## Links to Code Blocks for Figures
+
+The figures mentioned below are located in the 'blog_figures' folder.
 
 1. **Figure 1 - MRI Scan Samples** (https://github.com/dave-sbs/AD-detection/blob/main/oasis_data_classification_model.ipynb#display-example-mri-scans-from-each-class)
 2. **Figure 2 - CNN Confusion Matrix** (https://github.com/dave-sbs/AD-detection/blob/main/oasis_data_classification_model.ipynb#create-confusion-matrices)
