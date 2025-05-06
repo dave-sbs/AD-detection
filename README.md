@@ -10,19 +10,20 @@ This project leverages Convolutional Neural Networks (CNNs) to detect signs of d
 4. [Binary Classification](#binary-classification)
 5. [Our Models](#our-models)
 6. [Discussion](#discussion)
-7. [Limitations](#limitations)
-8. [Conclusion](#conclusion)
-9. [Citations](#citations)
+7. [Reproduce the Models and Figure](#reproduce-the-models-and-figures)
+8. [Limitations](#limitations)
+9. [Conclusion](#conclusion)
+10. [Citations](#citations)
 
 ---
 
 ## Introduction
 
-Alzheimer's disease, a leading cause of dementia, affects millions of people globally. The project's aim is to develop a model that can classify brain MRI scans into "Dementia" or "Non-Demented" categories using a CNN, assisting clinicians in early detection.
+Alzheimer's disease, a leading cause of dementia, affects millions of people globally. The project's aim is to develop a model that can classify brain MRI scans into "Dementia" or "Non-Demented" categories using a CNN, assisting clinicians in early detection. 
 
 ## Dataset
 
-The project used the [OASIS-1 dataset](https://www.oasis-brains.org), containing brain MRI scans from subjects with varying degrees of cognitive impairment. The dataset was preprocessed to focus on image slices and prevent data leakage.
+The project used the [OASIS-1 dataset](https://www.oasis-brains.org), containing brain MRI scans from subjects with varying degrees of cognitive impairment. The dataset was preprocessed to focus on image slices and prevent data leakage. The actual image folders used to train our model can be downloaded from this link: https://www.kaggle.com/datasets/ninadaithal/imagesoasis. As there are too many image files to upload them all to GitHub, you will have to download them to your own computer directly from Kaggle. 
 
 ### Categories:
 - **Non-Demented**: 67,222 images
@@ -32,7 +33,7 @@ The project used the [OASIS-1 dataset](https://www.oasis-brains.org), containing
 
 ## Data Preprocessing
 
-Key challenges included **subject-based organization** to prevent data leakage and **class balancing** to handle the large discrepancy in image counts across categories.
+Key challenges included subject-based organization to prevent data leakage and class balancing to handle the large discrepancy in image counts across categories.
 
 ## Binary Classification
 
@@ -46,7 +47,7 @@ As a baseline, logistic regression achieved 67.4% accuracy.
 
 ### 2. Convolutional Neural Network (CNN)
 
-Our custom CNN achieved **83% validation accuracy**, outperforming logistic regression by a significant margin.
+Our custom CNN achieved 83% validation accuracy, outperforming logistic regression by a significant margin.
 
 ### 3. Transfer Learning with MobileNetV2
 
@@ -55,6 +56,39 @@ A pre-trained model, MobileNetV2, was tested but performed worse than the CNN, r
 ## Discussion
 
 Confusion matrices revealed both models had issues with false negatives (missing dementia cases) and false positives (incorrectly labeling non-demented subjects as having dementia).
+
+## Reproduce the Models and Figures
+
+To run this project on your own machine, follow these steps:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/dementia-mri-classification.git
+cd dementia-mri-classification
+```
+
+### 2. Download the Dataset
+
+This project uses a preprocessed version of the OASIS-1 brain MRI dataset. The folders were too large to upload to GitHub, so you can download it here from Kaggle: https://www.kaggle.com/datasets/ninadaithal/imagesoasis
+
+Once the ZIP file is extracted, move this folder into the root of this project and rename it to: 
+```
+./OASIS Data/
+```
+
+Your folder structure should look like this:
+
+```
+OASIS Data/
+├── Mild Dementia/
+├── Moderate Dementia/
+├── Non Demented/
+└── Very mild Dementia/
+```
+
+Finally, install the required dependencies and run the "oasis_data_classification_model.ipynb" jupyter notebook file cells in order.
+
 
 ## Limitations
 
@@ -77,9 +111,3 @@ Future work will extend the model to multi-class classification and incorporate 
 3. **Figure 3 - Transfer Learning Confusion Matrix** (https://github.com/dave-sbs/AD-detection/blob/main/oasis_data_classification_model.ipynb#create-confusion-matrices)
 ---
 
-
-## Citations
-
-1. Alzheimer’s Association. What is Alzheimer’s? Available: [link](https://www.alz.org/alzheimers-dementia/what-is-alzheimers)
-2. National Institute on Aging. What Happens to the Brain in Alzheimer’s Disease? Available: [link](https://www.nia.nih.gov/health/alzheimers-causes-and-risk-factors/what-happens-brain-alzheimers-disease)
-3. OASIS-1: Cross-Sectional Data. Available: [link](https://www.oasis-brains.org)
